@@ -1,0 +1,32 @@
+{
+    "build_file": null,
+    "build_targets": [
+        "@rules_cipd//cip/..."
+    ],
+    "compatibility_level": "1",
+    "deps": [
+        [
+            "platforms",
+            "0.0.4"
+        ],
+        [
+            "bazel_skylib",
+            "1.1.1"
+        ]
+    ],
+    "module_dot_bazel": null,
+    "name": "rules_cipd",
+    "patch_strip": 0,
+    "patches": [],
+    "presubmit_yml": null,
+    "strip_prefix": null,
+    "test_module_build_targets": [
+        "//cipd/..."
+    ],
+    "test_module_path": "",
+    "test_module_test_targets": [
+        "//cipd/..."
+    ],
+    "url": "https://github.com/bazelembedded/rules_cipd/releases/download/0.0.1/rules_cipd-0.0.1.tar.gz",
+    "version": "0.0.1"
+}

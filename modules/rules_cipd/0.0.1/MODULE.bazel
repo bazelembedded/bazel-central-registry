@@ -1,0 +1,17 @@
+module(
+    name = "rules_cipd",
+    version = "0.0.1",
+    compatibility_level = 1,
+)
+bazel_dep(name = "platforms", version = "0.0.4")
+bazel_dep(name = "bazel_skylib", version = "1.1.1")
+
+cipd = use_extension("@rules_cipd//cipd/internal:cipd_modules.bzl", "cipd")
+use_repo(
+    cipd,
+    # Repositories needed for rules to work correctly.
+    "cipd_client_linux_x86_64",
+    "cipd_client_macos_x86_64",
+    "cipd_client_windows_x86_64",
+    "cipd_client",
+)
